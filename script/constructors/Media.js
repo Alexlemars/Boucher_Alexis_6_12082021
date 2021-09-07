@@ -25,7 +25,7 @@ class Photography {
 	createHtml() {
 		return `
         <figure class="photographer-page__gallery__card" aria-label="${this._imgTitle} ">
-            <img class="photographer-page__gallery__media focus__element-secondary" loading="lazy" tabindex="5" src="../assets/medias/${this._imgPhotographerId}/${this._imgSrc}" alt="${this._imgAlt}" />
+            <img class="photographer-page__gallery__media focus__element-secondary" loading="lazy" tabindex="5" src="./assets/medias/${this._imgPhotographerId}/${this._imgSrc}" alt="${this._imgAlt}" />
             <footer class="photographer-page__gallery__media__footer">
                 <figcaption class="photographer-page__gallery__media__footer__figcaption">${this._imgTitle}</figcaption>
                 <div class="photographer-page__gallery__media__footer__like-section">
@@ -52,7 +52,7 @@ class Video {
 		return `
         <figure class="photographer-page__gallery__card" aria-label = "${this._videoTitle}">
             <video controls class="photographer-page__gallery__media focus__element-secondary" tabindex="5">
-                <source src="../assets/medias/${this._videoPhotographerId}/${this._videoSrc}"/>
+                <source src="./assets/medias/${this._videoPhotographerId}/${this._videoSrc}"/>
             </video>
             <footer class="photographer-page__gallery__media__footer">
                 <figcaption class="photographer-page__gallery__media__footer__figcaption">${this._videoTitle}</figcaption>
