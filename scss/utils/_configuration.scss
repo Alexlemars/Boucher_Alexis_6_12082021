@@ -1,0 +1,34 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+figure {
+	margin: 0;
+}
+
+
+.skip-link {
+	transition: transform 0.3s;
+	background: $oldbrick;
+	color: #fff;
+	font-weight: 700;
+	left: 50%;
+	padding: 4px;
+	position: absolute;
+	transform: translateY(-300%);
+}
+
+.skip-link:focus {
+	transform: translateY(-100%);
+}
+
+.skip-link:focus-within {
+	transform: translateY(-100%);
+}

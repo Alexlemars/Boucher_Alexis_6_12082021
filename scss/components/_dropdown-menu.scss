@@ -1,0 +1,128 @@
+.photographer-page__dropdown{
+    gap:10px;
+    z-index: 1;
+
+    &-trier{
+        font-size: 1.5em;
+        position: relative;
+        top:40px;
+    }
+
+    &-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $oldbrick;
+        border-radius: 7px;
+        box-shadow:none;
+        color: white;
+        height: 60px;
+        width:170px;
+        font-size: 1.3em;
+        padding-left: 20px;
+        text-align: left;
+        cursor: pointer;
+        border: 0.8px solid $oldbrick;
+        z-index: 1;
+        &-newselect{
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        background-color: $oldbrick;
+        border-radius: 7px;
+        box-shadow:none;
+        color: white;
+        height: 60px;
+        width:170px;
+        font-size: 1.3em;
+        padding-left: 20px;
+        text-align: left;
+        cursor: pointer;
+        border: 0.8px solid $oldbrick;
+        border-bottom: 1px solid white;
+        z-index: 1;
+        }
+        &-item{
+            z-index: 1;
+            &-none{
+                display: none;
+
+                
+            }
+
+        }
+
+        &-titre, &-date, &-popularite{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $oldbrick;
+            border-radius: 0px 0px 7px 7px;
+            box-shadow:none;
+            color: white;
+            height: 60px;
+            width:170px;
+            font-size: 1.3em;
+            padding-left: 20px;
+            text-align: left;
+            cursor: pointer;
+            border: 0.8px solid $oldbrick;
+            border-bottom: 1px solid white;
+            z-index: 1;
+        }
+        &-date{
+            border-radius: 0px;
+
+        }
+        &-titre{
+            border-bottom:0.8px solid $oldbrick;
+        }
+
+    }
+}
+
+.container{
+    position: absolute;
+            left:180px;
+            top:475px;
+}
+
+
+.fa-chevron-down{
+    font-size: 1.4em;
+    display: block;
+    opacity: 1;
+    position: relative;
+    left:160px;
+    top:45px;
+    color: white;
+    z-index: 10;
+}
+
+    @media (min-width: 1030px){
+        .container{
+            position: absolute;
+            left:180px;
+            top:400px;
+        }
+    }
+
+    @media (min-width: 1300px){
+        .container{
+            position: absolute;
+            left:180px;
+            top:400px;
+        }
+
+    }
+
+    @media (min-width: 1400px) {
+
+        .container{
+            position: absolute;
+            left:190px;
+            top:400px;
+        }
+    }
