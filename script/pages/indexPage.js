@@ -2,7 +2,7 @@
 
 
 	const getData = async () =>
-	await fetch("/photographers.json")
+	await fetch("./photographers.json")
 		.then((res) => res.json())
 		.catch((err) => console.log("", err));
  
