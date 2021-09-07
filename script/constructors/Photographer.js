@@ -13,7 +13,7 @@ class Photographer {
     }
     //lien vers image de profil du photographe
     get picture() {
-        return `/assets/photographers/${this._picture}`
+        return `./assets/photographers/${this._picture}`
     }
 
     //localisation du photographe
@@ -29,7 +29,7 @@ class Photographer {
     //creation de presention du photographe(nom,photo...)
     get userCard() {
         return `
-            <a href="pages/photographer-page.html?id=${this._id}" tabindex="10" class="focus__element" aria-label="Aller sur la page de ${this._name} basé à ${this.localization} sont tarif journalier est de ${this._price} euro par jour. Sa spécialité est ${this._tags} et sa devise ${this._tagline}" >
+            <a href="./photographer-page.html?id=${this._id}" tabindex="10" class="focus__element" aria-label="Aller sur la page de ${this._name} basé à ${this.localization} sont tarif journalier est de ${this._price} euro par jour. Sa spécialité est ${this._tags} et sa devise ${this._tagline}" >
                 <article class="photographer">
                     <img class="photographer__img" src="${this.picture}" alt="Photographie de profil de ${this._name}">
                     <h2 class="photographer__name">${this._name}</h2>
