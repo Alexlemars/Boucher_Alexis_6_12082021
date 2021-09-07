@@ -13,7 +13,7 @@ class Photographer {
     }
     //lien vers image de profil du photographe
     get picture() {
-        return `../assets/photographers/${this._picture}`
+        return `/assets/photographers/${this._picture}`
     }
 
     //localisation du photographe
