@@ -50,7 +50,7 @@ class Photographer {
                 <h1 class="photographer-page__header__content__title">${this._name}</h1>
                 <p class="photographer-page__header__content__localization">${this.localization}</p>
                 <p class="photographer-page__header__content__tagline">${this._tagline}</p>
-                <ul class="photographer-page__header__content__taglist">${this._tags.map(tag => `<li href="../index.html" class="photographer-page__header__content__tags">#${tag}</li>`).join(" ")}</ul>
+                <ul class="photographer-page__header__content__taglist">${this._tags.map(tag => `<li href="./index.html" class="photographer-page__header__content__tags">#${tag}</li>`).join(" ")}</ul>
             </div>
             <button class="photographer-page__contact__button focus__element-secondary" tabindex="3" onclick="displayPhotographerModale()" aria-label="Contacter le photographe ${this._name}">Contactez-moi
             </button>
@@ -72,6 +72,19 @@ class Photographer {
         `
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+    
     //fonction pour compter le nombre de likes sur la page des photographes
       
     get userReloadLikes() {

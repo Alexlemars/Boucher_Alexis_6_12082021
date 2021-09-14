@@ -57,7 +57,12 @@
 
 .lightbox__previous {
 	right: auto;
-	left: 0;
+	left: -15px;
+}
+
+.lightbox__next{
+	right: -15px;
+
 }
 .lightbox button {
 	background: none;
@@ -105,6 +110,17 @@
 	}
 	to {
 		opacity: 1;
+	}
+}
+
+
+@media (min-width: 700px){
+	.lightbox__previous{
+		left:-18px;
+	}
+	.lightbox__next{
+		right:-18px;
+
 	}
 }
 

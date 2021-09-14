@@ -9,8 +9,8 @@ class Lightbox {
 				e.preventDefault();
 				new Lightbox(e.currentTarget.getAttribute("src"), gallery);
 				document.querySelector(".lightbox__close").focus()
-				document.querySelector("lightbox__previous").focus()
-				document.querySelector("lightbox__next").focus()
+				document.querySelector("lightbox__previous")
+				document.querySelector("lightbox__next")
 
 			});
 			link.addEventListener("keyup", (e) => {
@@ -18,8 +18,8 @@ class Lightbox {
 					e.preventDefault();
 					new Lightbox(e.currentTarget.getAttribute("src"), gallery);
 					document.querySelector(".lightbox__close").focus()
-					document.querySelector("lightbox__previous").focus()
-					document.querySelector("lightbox__next").focus()
+					document.querySelector("lightbox__previous")
+					document.querySelector("lightbox__next")
 				} else {
 					return;
 				}

@@ -86,7 +86,7 @@
 .container{
     position: absolute;
             left:180px;
-            top:475px;
+            top:570px;
 }
 
 
@@ -105,24 +105,27 @@
         .container{
             position: absolute;
             left:180px;
-            top:400px;
+            top:570px;
         }
     }
-
-    @media (min-width: 1300px){
+    @media (min-width: 1080px){
         .container{
             position: absolute;
             left:180px;
-            top:400px;
+            top: 500px;        
         }
-
     }
 
-    @media (min-width: 1400px) {
 
+    @media (min-width: 1440px) {
+        .photographer-page__dropdown{
+            position: relative;
+        }
         .container{
             position: absolute;
-            left:190px;
-            top:400px;
+            left: 100px;
+            top: -0px;
+
+
         }
     }

@@ -1,6 +1,5 @@
 //fetchAppi
 
-
 	const getData = async () =>
 	await fetch("./photographers.json")
 		.then((res) => res.json())

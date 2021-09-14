@@ -229,7 +229,11 @@
 
 .lightbox__previous {
   right: auto;
-  left: 0;
+  left: -15px;
+}
+
+.lightbox__next {
+  right: -15px;
 }
 
 .lightbox button {
@@ -274,6 +278,15 @@
   }
   to {
     opacity: 1;
+  }
+}
+@media (min-width: 700px) {
+  .lightbox__previous {
+    left: -18px;
+  }
+
+  .lightbox__next {
+    right: -18px;
   }
 }
 @media (min-width: 768px) {
@@ -378,7 +391,7 @@
 .container {
   position: absolute;
   left: 180px;
-  top: 475px;
+  top: 570px;
 }
 
 .fa-chevron-down {
@@ -396,21 +409,25 @@
   .container {
     position: absolute;
     left: 180px;
-    top: 400px;
+    top: 570px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1080px) {
   .container {
     position: absolute;
     left: 180px;
-    top: 400px;
+    top: 500px;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
+  .photographer-page__dropdown {
+    position: relative;
+  }
+
   .container {
     position: absolute;
-    left: 190px;
-    top: 400px;
+    left: 100px;
+    top: 0px;
   }
 }
 body {
@@ -420,6 +437,7 @@ body {
 
 .header {
   display: grid;
+  text-align: center;
   grid-template-columns: 50% 50%;
   gap: 1rem 0rem;
   grid-template-rows: repeat(2, 1fr);
@@ -518,6 +536,12 @@ body {
     margin: auto;
   }
 }
+@media (min-width: 1440px) {
+  .container-body {
+    width: 1440px;
+    margin: auto;
+  }
+}
 .photographer-page {
   align-items: center;
   display: flex;
@@ -526,10 +550,6 @@ body {
 }
 .photographer-page__logo {
   height: 37.5px;
-  left: 20px;
-  margin-bottom: 2rem;
-  position: absolute;
-  top: 40px;
   width: 150px;
 }
 .photographer-page__header {
